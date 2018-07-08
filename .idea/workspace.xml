@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e8bbed-403e-48be-a90d-5d4fcbff754f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/best-charge-spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/spec/best-charge-spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/best-charge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/best-charge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/items.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/promotions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/promotions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,25 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="57" column="35" lean-forward="true" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+            <state relative-caret-position="75">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="-1325">
+              <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -51,8 +45,17 @@
       <file leaf-file-name="best-charge-spec.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/best-charge-spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+            <state relative-caret-position="2393">
+              <caret line="222" column="5" lean-forward="true" selection-start-line="222" selection-start-column="5" selection-end-line="222" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promotions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/promotions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -70,34 +73,25 @@
       <file leaf-file-name="items.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/items.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="375">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="promotions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/promotions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="best-charge.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/best-charge.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="231">
+              <caret line="80" column="22" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="22" />
               <folding>
+                <element signature="n#!!block;n#buildCartDishes#0" />
                 <element signature="n#!!block;n#calculateCartDishesOriginalPrice#0" />
-                <element signature="n#!!block;n#getCartDishesPromotionPriceMap#0" />
-                <element signature="n#!!block;n#calculateCartDishesPromotionPrice#0" />
-                <element signature="n#!!block;n#choosePromotionWay#0" />
-                <element signature="n#!!block;n#getPromotionPriceByPromotionType#0" />
-                <element signature="e#684#690#0" />
-                <element signature="n#!!block;n#generateReceipt#0" />
               </folding>
             </state>
           </provider>
@@ -108,12 +102,19 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>items</find>
-      <find>buildCartDishes</find>
       <find>buildCartDishesWithDetailById</find>
       <find>calculateCartDishesOriginalPrice</find>
-      <find>getCartDishesPromotionPriceMap</find>
       <find>choosePromotionWay</find>
       <find>getPromotionPriceByPromotionType</find>
+      <find>buildCartDishes</find>
+      <find>getCartDishesPromotionPriceMap</find>
+      <find>choosePromotionType</find>
+      <find>calCartDishesBestCharge</find>
+      <find>should return best PromotionWay</find>
+      <find>item.split</find>
+      <find>console.info</find>
+      <find>calCartDishesBy30Minus6</find>
+      <find>trim</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,15 +215,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530956722058</updated>
-      <workItem from="1530956723197" duration="9278000" />
+      <workItem from="1530956723197" duration="18149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9278000" />
+    <option name="totallyTimeSpent" value="18149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3296875" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -232,7 +234,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32946146" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.34952483" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -252,18 +254,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="-3425">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/run-specs.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/run-test.js">
@@ -272,50 +274,52 @@
     <entry file="file://$PROJECT_DIR$/student-name.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/run-specs.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="57" column="35" lean-forward="true" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/promotions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="75">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/items.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="375">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1325">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/best-charge.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="231">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="22" />
           <folding>
+            <element signature="n#!!block;n#buildCartDishes#0" />
             <element signature="n#!!block;n#calculateCartDishesOriginalPrice#0" />
-            <element signature="n#!!block;n#getCartDishesPromotionPriceMap#0" />
-            <element signature="n#!!block;n#calculateCartDishesPromotionPrice#0" />
-            <element signature="n#!!block;n#choosePromotionWay#0" />
-            <element signature="n#!!block;n#getPromotionPriceByPromotionType#0" />
-            <element signature="e#684#690#0" />
-            <element signature="n#!!block;n#generateReceipt#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/promotions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/best-charge-spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+        <state relative-caret-position="2393">
+          <caret line="222" column="5" lean-forward="true" selection-start-line="222" selection-start-column="5" selection-end-line="222" selection-end-column="5" />
         </state>
       </provider>
     </entry>

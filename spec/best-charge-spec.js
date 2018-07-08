@@ -1,7 +1,7 @@
 const {bestCharge} = require('../src/best-charge');
 const {loadAllItems} = require('../src/items');
 const {loadPromotions} = require('../src/promotions');
-const{buildCartDishes,buildCartDishesWithDetailById,calculateCartDishesOriginalPrice,getCartDishesPromotionPriceMap,calculateCartDishesPromotionPrice,choosePromotionWay,getPromotionPriceByPromotionType,calCartDishesBestCharge,generateReceipt} = require('../src/best-charge');
+const{buildCartDishes,buildCartDishesWithDetailById,calculateCartDishesOriginalPrice,getCartDishesPromotionPriceMap,calculateCartDishesPromotionPrice,choosePromotionType,getPromotionPriceByPromotionType,calCartDishesBestCharge,generateReceipt,calCartDishesBy30Minus6,calCartDishesBySpecifyHalfPrice} = require('../src/best-charge');
 describe('Take out food', function () {
 
   it('should generate best charge when best is 指定菜品半价', function() {
@@ -131,7 +131,7 @@ describe('Take out food', function () {
       "promotionType":"指定菜品半价",
       "promotionPrice":18
     }];
-    expect(JSON.stringify(outputs)).toEqual(expected);
+    expect(JSON.stringify(outputs)).toEqual(JSON.stringify(expected));
   });
 
   it('should return cartDishes promotionPrice By calculateCartDishes', function() {
@@ -147,9 +147,10 @@ describe('Take out food', function () {
         "price":2.00,
         "count":5
       }];
-    let promotionsArray = loadPromotions();
-    let type = "满30减6元";
-    let outputs = calculateCartDishesPromotionPrice(cartDishesDetail,promotionsArray,type);
+    let promotion = {
+      type: '满30减6元'
+    };
+    let outputs = calculateCartDishesPromotionPrice(cartDishesDetail,promotion);
     let expected = 6;
     expect(outputs).toEqual(expected);
   });
@@ -163,9 +164,9 @@ describe('Take out food', function () {
       "promotionType":"指定菜品半价",
       "promotionPrice":18
     }];
-    let outputs = choosePromotionWay(promtionMap);
+    let outputs = choosePromotionType(promtionMap);
     let expected = `指定菜品半价`;
-    expect(JSON.stringify(outputs)).toEqual(expected);
+    expect(JSON.stringify(outputs)).toEqual(JSON.stringify(expected));
   });
 
 
@@ -184,6 +185,44 @@ describe('Take out food', function () {
     expect(outputs).toEqual(expected)
   });
 
+  it('should return calCartDishesBy30Minus6 ', function() {
+    let cartDishesWithDetailArray = [{
+      "id":"ITEM0001",
+      "name":"黄焖鸡",
+      "price":18.00,
+      "count":2
+    },
+      {
+        "id":"ITEM0030",
+        "name":"冰锋",
+        "price":2.00,
+        "count":5
+      }];
+    let outputs =calCartDishesBy30Minus6(cartDishesWithDetailArray);
+    let expected = 6;
+    expect(outputs).toEqual(expected);
+  });
+
+  it('should return calCartDishesBySpecifyHalfPrice ', function() {
+    let cartDishesWithDetailArray = [{
+      "id":"ITEM0001",
+      "name":"黄焖鸡",
+      "price":18.00,
+      "count":2
+    },
+      {
+        "id":"ITEM0030",
+        "name":"冰锋",
+        "price":2.00,
+        "count":5
+      }];
+    let promotion = loadPromotions().find((promotion)=>promotion.type === '指定菜品半价');
+    let outputs =calCartDishesBySpecifyHalfPrice(cartDishesWithDetailArray,promotion);
+    let expected = 18;
+    expect(outputs).toEqual(expected);
+  });
+
+
   it('should return bestCharge', function() {
     let originalPrice = 46;
     let promotionPrice = 18;
@@ -195,7 +234,7 @@ describe('Take out food', function () {
 
 
   it('should return receipt', function() {
-    let cartDishesDetail = [{
+    let cartDishesWithDetailArray = [{
       "id":"ITEM0001",
       "name":"黄焖鸡",
       "price":18.00,
@@ -209,17 +248,18 @@ describe('Take out food', function () {
       }];
     let bestCharge = 28;
     let promotionType = "指定菜品半价";
-    let outputs =generateReceipt(cartDishesDetail,promotionType,bestCharge);
+    let promotionPrice = 18;
+    let outputs =generateReceipt(cartDishesWithDetailArray,promotionType,promotionPrice,bestCharge);
     let expected = `
 ============= 订餐明细 =============
 黄焖鸡 x 2 = 36元
 冰锋 x 5 = 10元
 -----------------------------------
 使用优惠:
-指定菜品半价，省18元
+指定菜品半价(黄焖鸡，凉皮)，省18元
 -----------------------------------
 总计：28元
 ===================================`.trim();
-    expect(JSON.stringify(outputs)).toEqual(expected);
+    expect(outputs.trim()).toEqual(expected);
   });
 });
